@@ -1,30 +1,29 @@
-# FocusFlow for Windows
+# FocusFlow
 
-A clean, dark desktop to-do app built with Python's standard library.
+A modern desktop To-Do List application built with Python and Tkinter.
 
 ## Features
-- Dashboard with total, completed, due-today and overdue counts
-- Create, edit, complete/undo and delete tasks
-- Notes, categories, priority levels and due dates
-- All tasks, Today, Upcoming and Completed views
-- Search, category filtering and sorting
-- CSV import/export and SQLite database backup
-- Local SQLite storage — no account or internet connection required
 
-## Run on Windows
-1. Install Python 3.10 or newer from https://www.python.org/downloads/
-2. During installation, enable **Add Python to PATH**.
-3. Extract this folder.
-4. Open Command Prompt in this folder and run:
+- Add, edit and delete tasks
+- Task categories and priorities
+- Due dates and reminders
+- Search and filter tasks
+- Task completion tracking
+- Dashboard statistics
+- CSV import and export
+- SQLite database storage
+- Database backup
 
-   `python main.py`
+## Technologies
 
-Your tasks are stored in `focusflow.db` beside the app.
+- Python
+- Tkinter
+- SQLite
 
-## Build a Windows EXE (optional)
-Open Command Prompt in this folder and run:
+## Run the application
 
-   `python -m pip install pyinstaller`
-   `python -m PyInstaller --noconfirm --onefile --windowed --name FocusFlow main.py`
+1. Clone this repository.
+2. Open the project folder.
+3. Run:
 
-The executable will be created in `dist\FocusFlow.exe`. Keep `focusflow.db` in the same folder as the EXE after first launch so your data remains easy to back up.
+   python main.py
