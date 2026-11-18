@@ -7,6 +7,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 APP_NAME = "FocusFlow"
+APP_VERSION = "1.1.0"
 DB_PATH = Path(__file__).with_name("focusflow.db")
 
 BG = "#101722"
@@ -69,7 +70,7 @@ class Store:
 class FocusFlow(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("FocusFlow — Plan with clarity")
+        self.title(f"{APP_NAME} v{APP_VERSION}")
         self.geometry("1180x760")
         self.minsize(940, 620)
         self.configure(bg=BG)
